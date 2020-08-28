@@ -30,7 +30,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://blaky-c.github.io/2020/08/28/20200828_01_about-cmake/pic1.jpg">
 <meta property="article:published_time" content="2020-08-28T03:03:54.000Z">
-<meta property="article:modified_time" content="2020-08-28T03:56:41.009Z">
+<meta property="article:modified_time" content="2020-08-28T04:01:28.728Z">
 <meta property="article:author" content="Blaky">
 <meta property="article:tag" content="Tools">
 <meta name="twitter:card" content="summary">
@@ -197,7 +197,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-08-28 11:03:54 / Modified: 11:56:41" itemprop="dateCreated datePublished" datetime="2020-08-28T11:03:54+08:00">2020-08-28</time>
+              <time title="Created: 2020-08-28 11:03:54 / Modified: 12:01:28" itemprop="dateCreated datePublished" datetime="2020-08-28T11:03:54+08:00">2020-08-28</time>
             </span>
 
           
@@ -213,7 +213,7 @@
       
         <h2 id="Cmake-学习笔记"><a href="#Cmake-学习笔记" class="headerlink" title="Cmake 学习笔记"></a>Cmake 学习笔记</h2><p>日期：2020/08/28</p>
 <p>参考：<a href="https://github.com/Akagi201/learning-cmake" target="_blank" rel="noopener">github_cmake_practice</a></p>
-<p>手册：<a href="./cmake-practice.pdf">cmake-practice.pdf</a></p>
+<p>手册：<a href="https://github.com/Akagi201/learning-cmake/blob/master/docs/cmake-practice.pdf" target="_blank" rel="noopener">cmake-practice.pdf</a></p>
 <p>Cmake工具是一款很不错的跨平台项目构建工具，能够较好地解决源码基于不同平台的构建问题。在网上找到了一个入门级的cmake项目进行学习，本文记录一些学习笔记方便日后查看。</p>
 <br>
 
@@ -270,7 +270,7 @@
 
 
 
-<h4 id="常用变量"><a href="#常用变量" class="headerlink" title="常用变量"></a>常用变量</h4><p>这里列举了一些常用的变量，更多的内容可以直接查阅手册：<a href="./cmake-practice.pdf">cmake-practice.pdf</a></p>
+<h4 id="常用变量"><a href="#常用变量" class="headerlink" title="常用变量"></a>常用变量</h4><p>这里列举了一些常用的变量，更多的内容可以直接查阅手册：<a href="https://github.com/Akagi201/learning-cmake/blob/master/docs/cmake-practice.pdf" target="_blank" rel="noopener">cmake-practice.pdf</a></p>
 <figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 项目名称</span></span><br><span class="line">PROJECT_NAME</span><br><span class="line"></span><br><span class="line"><span class="comment"># 项目构建目录</span></span><br><span class="line">&lt;project_name&gt;_BINARY_DIR / CMAKE_BINARY_DIR / PROJECT_BINARY_DIR</span><br><span class="line"><span class="comment"># 项目源码目录</span></span><br><span class="line">&lt;project_name&gt;_SOURCE_DIR / CMAKE_SOURCE_DIR / PROJECT_SOURCE_DIR</span><br><span class="line"></span><br><span class="line"><span class="comment"># 指定可执行文件和库的构建目录，最好在可执行文件和库对应目录下的CMakeLists.txt中指定</span></span><br><span class="line">EXECUTABLE_OUTPUT_PATH</span><br><span class="line">LIBRARY_OUTPUT_PATH</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装路径前缀，默认为 /usr/local</span></span><br><span class="line">CMAKE_INSTALL_PREFIX</span><br><span class="line"></span><br><span class="line"><span class="comment"># 当前CMakeLists.txt所在文件夹的相关信息</span></span><br><span class="line">CMAKE_CURRENT_SOURCE_DIR</span><br><span class="line">CMAKE_CURRENT_LIST_DIR</span><br><span class="line">CMAKE_CURRENT_BINARY_DIR</span><br><span class="line"></span><br><span class="line"><span class="comment"># </span></span><br><span class="line">CMAKE_MODULE_LIST</span><br></pre></td></tr></table></figure>
 
 
